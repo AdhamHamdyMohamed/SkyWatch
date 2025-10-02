@@ -2,7 +2,6 @@
 const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 const API_KEY = "9285d1263d76d6ca8771d8b2a8e3313e";
 
-// Theme Toggle - GOOD
 function toggleTheme() {
   const root = document.documentElement;
   const themeIcon = document.getElementById("theme-icon");
@@ -90,7 +89,6 @@ function getWeatherIcon(weather) {
   return icons[weather] || "🌤️";
 }
 
-// Enter key support - GOOD
 document.getElementById("cityInput").addEventListener("keyup", function (e) {
   if (e.key === "Enter") {
     searchWeather();
